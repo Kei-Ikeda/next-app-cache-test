@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Poke Rerender Checker",
-  description: "Poke Rerender Checker",
+  title: "Poke Cache Checker",
+  description: "Poke Cache Checker",
 };
 
 export default function RootLayout({
