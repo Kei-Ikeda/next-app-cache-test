@@ -24,8 +24,10 @@ export default function Home() {
         </a>
         で Suspense の fallback が動作していません
       </p>
-      <div className="mt-4 flex flex-col gap-y-2">
-        <p>-------SSG-------</p>
+      <div className="mt-8 flex flex-col gap-y-2">
+        <p>
+          -------<span className="font-bold">SSG</span>-------
+        </p>
         <Suspense fallback={<>Loading...</>}>
           <Ssg />
         </Suspense>
@@ -37,8 +39,10 @@ export default function Home() {
         </div>
         <p>-----------------</p>
       </div>
-      <div className="mt-4 flex flex-col gap-y-2">
-        <p>-------Isr-------</p>
+      <div className="mt-8 flex flex-col gap-y-2">
+        <p>
+          -------<span className="font-bold">ISR</span>-------
+        </p>
         <Suspense fallback={<>Loading...</>}>
           <Isr />
         </Suspense>
@@ -51,8 +55,10 @@ export default function Home() {
         </div>
         <p>-----------------</p>
       </div>
-      <div className="mt-4 flex flex-col gap-y-2">
-        <p>-------Ssr-------</p>
+      <div className="mt-8 flex flex-col gap-y-2">
+        <p>
+          -------<span className="font-bold">SSR</span>-------
+        </p>
         <Suspense fallback={<>Loading...</>}>
           <Ssr />
         </Suspense>
