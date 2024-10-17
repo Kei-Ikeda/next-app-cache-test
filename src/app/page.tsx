@@ -24,7 +24,7 @@ export default function Home() {
         </a>
         で Suspense の fallback が動作していません
       </p>
-      <div className="mt-8 flex flex-col gap-y-2">
+      <div className="mt-4 flex flex-col gap-y-2">
         <p>
           -------<span className="font-bold">SSG</span>-------
         </p>
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <p>-----------------</p>
       </div>
-      <div className="mt-8 flex flex-col gap-y-2">
+      <div className="mt-4 flex flex-col gap-y-2">
         <p>
           -------<span className="font-bold">ISR</span>-------
         </p>
