@@ -10,6 +10,7 @@ export async function GET(request: Request) {
   // console.log('revalidate is work');
   // パスを再検証
   revalidateTag("pokeApiIsr");
+  await new Promise((resolve) => setTimeout(resolve, 1500));
   const appUrl = process.env.APP_URL;
   if (!typeGuardEnv(appUrl)) {
     return new Response("Error", {
@@ -25,3 +26,5 @@ export async function GET(request: Request) {
     },
   });
 }
+
+export const dynamic = "force-dynamic";
