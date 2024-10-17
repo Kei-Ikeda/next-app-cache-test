@@ -14,7 +14,7 @@ export async function GET(request: Request) {
     const result = await instance.get<PokeAPI.Pokemon>(
       `pokemon/${Math.floor(Math.random() * 151) + 1}`
     );
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
 
     const appUrl = process.env.APP_URL;
     if (!typeGuardEnv(appUrl)) {
