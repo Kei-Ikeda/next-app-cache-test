@@ -3,14 +3,16 @@ import Ssg from "@/app/_top/ssg";
 import Isr from "@/app/_top/isr";
 import Ssr from "@/app/_top/ssr";
 import Button from "@/components/button";
+import ReloadButton from "@/components/reloadButton";
 
 export default function Home() {
   return (
     <div className="p-4">
-      <p className="font-bold text-lg">
-        ブラウザをリロードして動作を確認してください
+      <p className="font-bold text-lg flex gap-x-2 items-center">
+        <ReloadButton />
+        <span>を押下、またはブラウザをリロードして動作を確認してください</span>
       </p>
-      <p className="font-bold">
+      <p className="font-bold mt-4">
         ポケモンが再レンダリングされる場合はサーバー側でAPIからの再取得が発生しています
       </p>
       <p className="text-sm mt-4">
