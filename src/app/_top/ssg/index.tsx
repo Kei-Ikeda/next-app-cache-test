@@ -3,7 +3,7 @@ import getBaseUrl from "@/utils/getBaseUrl";
 
 async function Ssg() {
   const baseUrl = getBaseUrl();
-  const response = await fetch(`${baseUrl}/api/pokeApi`, {
+  const response = await fetch(`${baseUrl}/api/pokeApi/ssg`, {
     cache: "force-cache",
     next: { tags: ["pokeApi"] },
   });

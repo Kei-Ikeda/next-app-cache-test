@@ -3,7 +3,7 @@ import getBaseUrl from "@/utils/getBaseUrl";
 
 async function Isr() {
   const baseUrl = getBaseUrl();
-  const response = await fetch(`${baseUrl}/api/pokeApi`, {
+  const response = await fetch(`${baseUrl}/api/pokeApi/isr`, {
     next: { revalidate: 20, tags: ["pokeApiIsr"] },
   });
   if (!response.ok) return undefined;
